@@ -6,11 +6,11 @@ We also know that, we can not directly run laravel project from localhost/subfol
 
 **Note that you need to add below content in your env**
 
-APP_URL=http://example.com/<subfolder>
+APP_URL=http://example.com/[subfolder]/
 
-ASSET_URL=http://example.com/<subfolder>
+ASSET_URL=http://example.com/[subfolder]/
 
-APP_DIR=<subfolder>
+APP_DIR=[subfolder]
 
 **Keep all your routes inside APP_DIR subfolder**
 
