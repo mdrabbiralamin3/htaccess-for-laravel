@@ -22,7 +22,7 @@ APP_DIR=<subfolder>
 
 **Keep all your routes inside APP_DIR subfolder**
 
-$prefix = env('APP_DIR', ''); // Defaults to empty if APP_DIR is not set
-Route::prefix($prefix)->group(function () {
-    // All your routes
+$prefix = env('APP_DIR', ''); // Defaults to empty if APP_DIR is not set \n
+Route::prefix($prefix)->group(function () { \n
+    // All your routes \n
 });
