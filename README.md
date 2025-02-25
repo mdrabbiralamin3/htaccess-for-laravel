@@ -5,13 +5,14 @@ We all know that, we can not directly run laravel project from localhost. We hav
 We also know that, we can not directly run laravel project from localhost/subfolder also. We have to run php artisan serve command for that. But using this .htaccess-for-subfolder file in root folder we can directly run our project from localhost.
 
 **folder for running laravel project inside subfolder structure will be**
+
 /root
     /<subfolder>/
         /public/
             index.php
-            login
             .htaccess // laravel default htaccess
         .htaccess // your generated htaccess
+
 
 **Note that you need to add below content in your env**
 
