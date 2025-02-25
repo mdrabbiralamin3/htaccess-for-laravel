@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /<subfolder>/
+
+    RewriteCond %{REQUEST_URI} ^/<subfolder>/?$ [NC]
+    RewriteRule ^ /<subfolder>/login [R=302,L]
+
+    # If the requested file or directory exists, serve it normally
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Redirect everything else to /public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
